@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 mongoose.connect(process.env.DATABASE_URI)
-    .then(()=>{
+            .then(()=>{
         console.log("Connected to MondoDb")
     })
     .catch((error)=>{
